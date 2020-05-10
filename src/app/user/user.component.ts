@@ -16,7 +16,7 @@ export class UserComponent implements OnInit {
 
   async ngOnInit() {
     this.receber = await this.service.get()
-    this.user = this.receber
+    this.users = this.receber
   }
 
 }

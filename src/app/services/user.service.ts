@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http'
   providedIn: 'root'
 })
 export class userService {
-  private JsonExample = 'https://jsonplaceholder.typicode.com/comment/'
+  private JsonExample = 'https://jsonplaceholder.typicode.com/users'
 
   constructor(private http: HttpClient) { }
 

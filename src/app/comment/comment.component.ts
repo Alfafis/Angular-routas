@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
 import { comment } from '../models/comment'
 import { commentService } from '../services/comment.service'
 
@@ -8,6 +8,8 @@ import { commentService } from '../services/comment.service'
   styleUrls: ['./comment.component.css']
 })
 export class CommentComponent implements OnInit {
+  @Input() idPost
+
   comment: comment
   comments: comment[]
   receber: any
